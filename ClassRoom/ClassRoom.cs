@@ -8,15 +8,14 @@ namespace ClassRoom
 {
     public class ClassRoom
     {
-        private string className;
-        private List<string> classList;
-        private DateTime semesterStart;
+        public string className;
+        public List<Student> classList;
+        public DateTime semesterStart;
 
         public ClassRoom()
         {
-            className = "3o";
-            classList = new List<string>();
-            semesterStart = new DateTime(2021, 9, 2);
+            classList = new List<Student>();
+            semesterStart = new DateTime();
         }
 
 
