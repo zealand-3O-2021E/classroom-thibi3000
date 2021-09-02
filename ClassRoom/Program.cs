@@ -27,6 +27,8 @@ namespace ClassRoom
             {
                 Console.WriteLine($"Name: {student.name}");
             }
+
+            classRoom.CountSeasonStudents();
                 }
     }
 }

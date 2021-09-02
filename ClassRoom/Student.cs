@@ -9,7 +9,7 @@ namespace ClassRoom
     public class Student
     {
         public string name;
-        private int birthMonth;
+        public int birthMonth;
         private int birthday;
 
         public Student(string name, int birthMonth, int birthday)
