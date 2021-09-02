@@ -8,7 +8,7 @@ namespace ClassRoom
 {
     public class Student
     {
-        private string name;
+        public string name;
         private int birthMonth;
         private int birthday;
 
@@ -17,6 +17,36 @@ namespace ClassRoom
             this.name = name;
             this.birthMonth = birthMonth;
             this.birthday = birthday;
+        }
+
+        public string season()
+        {
+            switch(birthMonth)
+            {
+                case 3:
+                case 4:
+                case 5:
+                    return "Spring";
+    
+                case 6:
+                case 7:
+                case 8:
+                    return "Summer";
+                    
+                case 9:
+                case 10:
+                case 11:
+                    return "Autumn";
+
+                case 12:
+                case 1:
+                case 2:
+                    return "Winter";
+
+                default:
+                    return "The given month is not between 1 and 12!!";
+
+            }
         }
     }
 }
