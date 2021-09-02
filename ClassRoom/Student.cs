@@ -14,8 +14,12 @@ namespace ClassRoom
 
         public Student(string name, int birthMonth, int birthday)
         {
-            this.name = name;
-            this.birthMonth = birthMonth;
+            this.name = name;           
+            if (birthMonth >= 1 && birthMonth <= 12)
+            {
+                this.birthMonth = birthMonth;
+
+            }          
             this.birthday = birthday;
         }
 
