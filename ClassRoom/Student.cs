@@ -19,11 +19,15 @@ namespace ClassRoom
             {
                 this.birthMonth = birthMonth;
 
-            }          
+            }
+            else
+            {
+                throw new ArgumentException();
+            }
             this.birthday = birthday;
         }
 
-        public string season()
+        public string Season()
         {
             switch(birthMonth)
             {
